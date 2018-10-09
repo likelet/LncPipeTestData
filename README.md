@@ -24,8 +24,6 @@ The file includes
 
 * nextflow running config file `docker.config`
 
-* A singularity image `lncPipe.image` that storing all required environment
-
 
 ## Test command  (Assume that docker and nextflow were properly preinstalled )
 
