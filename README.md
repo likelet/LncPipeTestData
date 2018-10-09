@@ -28,9 +28,10 @@ The file includes
 
 ## Test command  (Assume that docker and nextflow were properly preinstalled )
 
-* __Step 1__. Clone the test data 
+* __Step 1__. Download the test data 
 
-        git clone https://github.com/likelet/LncPipeTestData.git
+        wget http://cancerbio.info/pub/LncPipeTestData.tar.gz
+        tar -xvzf LncPipeTestData.tar.gz
         cd LncPipeTestData
 
 * __Step 2__. Get the lastest lncPipe  
@@ -97,3 +98,5 @@ The file includes
             └── kallisto.tpm.txt
         ```
 ## Run information 
+
+[]
