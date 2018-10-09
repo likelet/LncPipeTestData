@@ -21,12 +21,12 @@ The file includes
 
 * Experimental design file `design.file`
 
-* nextflow running config file `singularity.config`
+* nextflow running config file `docker.config`
 
 * A singularity image `lncPipe.image` that storing all required environment
 
 
-## Test command  (Assume that singularity and nextflow were properly preinstalled )
+## Test command  (Assume that docker and nextflow were properly preinstalled )
 
 * __Step 1__. Clone the test data 
 
@@ -42,4 +42,58 @@ The file includes
         nextflow -c singularity.config run LncPipe/LncRNAanalysisPipe.nf -with-trace -resume -with-timeline timeline.html
 
 
-        
+## Result content (expected result)
+        ```
+        ├── hisat_alignment
+        │   ├── R1126N.hisat2_summary.txt
+        │   ├── R1126N.sort.bam
+        │   ├── R1126T.hisat2_summary.txt
+        │   ├── R1126T.sort.bam
+        │   ├── R1130N.hisat2_summary.txt
+        │   ├── R1130N.sort.bam
+        │   ├── R1130T.hisat2_summary.txt
+        │   ├── R1130T.sort.bam
+        │   ├── R1134N.hisat2_summary.txt
+        │   ├── R1134N.sort.bam
+        │   ├── R1134T.hisat2_summary.txt
+        │   ├── R1134T.sort.bam
+        │   ├── S483N.hisat2_summary.txt
+        │   ├── S483N.sort.bam
+        │   ├── S483T.hisat2_summary.txt
+        │   ├── S483T.sort.bam
+        │   ├── S502N.hisat2_summary.txt
+        │   ├── S502N.sort.bam
+        │   ├── S502T.hisat2_summary.txt
+        │   └── S502T.sort.bam
+        ├── Identified_lncRNA
+        │   ├── all_lncRNA_for_classifier.gtf
+        │   ├── final_all.fa
+        │   ├── final_all.gtf
+        │   ├── lncRNA_classification.txt
+        │   ├── lncRNA.fa
+        │   ├── protein_coding.fa
+        │   └── protein_coding.final.gtf
+        ├── LncPipeReports
+        │   ├── figures
+        │   ├── libs
+        │   ├── reporter_files
+        │   ├── reporter.html
+        │   └── tables
+        ├── Merged_assemblies
+        │   └── merged.gtf
+        ├── QC
+        │   ├── R1126N_fastp.html
+        │   ├── R1126T_fastp.html
+        │   ├── R1130N_fastp.html
+        │   ├── R1130T_fastp.html
+        │   ├── R1134N_fastp.html
+        │   ├── R1134T_fastp.html
+        │   ├── S483N_fastp.html
+        │   ├── S483T_fastp.html
+        │   ├── S502N_fastp.html
+        │   └── S502T_fastp.html
+        └── Quantification
+            ├── kallisto.count.txt
+            └── kallisto.tpm.txt
+        ```
+## Run information 
