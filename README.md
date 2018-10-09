@@ -39,7 +39,7 @@ The file includes
 
         git clone https://github.com/likelet/LncPipe.git 
 
-* __Step 3__. Run the analysis command  (about 30mins)
+* __Step 3__. Run the analysis command  (about 10 mins)
 
         nextflow -c docker.config run LncPipe/LncRNAanalysisPipe.nf -with-trace -resume -with-timeline timeline.html
 
