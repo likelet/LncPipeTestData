@@ -2,7 +2,7 @@
 
 This repo contains a test case for running LncPipe.  
 
-# Data Information   
+## Data Information   
 
 Only a subset of the whole dataset (trimmed for chrX only) were put on this repo for improving testing efficiency for LncPipe. 
 The file includes  
@@ -26,18 +26,18 @@ The file includes
 * A singularity image `lncPipe.image` that storing all required environment
 
 
-# Test command  (singularity and nextflow should be preinstalled)
+## Test command  (singularity and nextflow should be preinstalled)
 
-* Pull the test data 
+* __Step 1__. Clone the test data 
 
         git clone test
         cd LncPipeTestData
 
-* Pull the lastest lncPipe  
+* __Step 2__. Get the lastest lncPipe  
 
         git clone https://github.com/likelet/LncPipe.git 
 
-* Run the analysis command  
+* __Step 3__. Run the analysis command  
 
         nextflow -c singularity.config run LncPipe/LncRNAanalysisPipe.nf -with-trace -resume -with-timeline timeline.html
 
