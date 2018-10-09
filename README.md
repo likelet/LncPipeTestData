@@ -1,6 +1,7 @@
 # LncPipeTestData
 
 This repo contains a test case for running LncPipe.  
+Testdata can be download [here](http://cancerbio.info/pub/LncPipeTestData.tar.gz)
 
 ## Data Information   
 
