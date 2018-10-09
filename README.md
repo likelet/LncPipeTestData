@@ -16,7 +16,7 @@ The file includes
     
 * GENCODE ANNOTATION file `gencode.v25.annotation.chrX.gtf`
 
-* LncPidia ANNOTATION file ``
+* LncPipedia ANNOTATION file `lncipedia_4_0.chrX.gtf`
 
 * Experimental design file `design.file`
 
