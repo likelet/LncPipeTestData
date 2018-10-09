@@ -26,11 +26,11 @@ The file includes
 * A singularity image `lncPipe.image` that storing all required environment
 
 
-## Test command  (singularity and nextflow should be preinstalled)
+## Test command  (Assume that singularity and nextflow were properly preinstalled )
 
 * __Step 1__. Clone the test data 
 
-        git clone test
+        git clone https://github.com/likelet/LncPipeTestData.git
         cd LncPipeTestData
 
 * __Step 2__. Get the lastest lncPipe  
