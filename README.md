@@ -37,9 +37,9 @@ The file includes
 
         git clone https://github.com/likelet/LncPipe.git 
 
-* __Step 3__. Run the analysis command  
+* __Step 3__. Run the analysis command  (about 30mins)
 
-        nextflow -c singularity.config run LncPipe/LncRNAanalysisPipe.nf -with-trace -resume -with-timeline timeline.html
+        nextflow -c docker.config run LncPipe/LncRNAanalysisPipe.nf -with-trace -resume -with-timeline timeline.html
 
 
 ## Result content (expected result)
