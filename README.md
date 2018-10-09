@@ -99,4 +99,4 @@ The file includes
         ```
 ## Run information 
 
-[timeline](https://github.com/likelet/LncPipeTestData/blob/master/timeplot.png)
+![timeline](https://github.com/likelet/LncPipeTestData/blob/master/timeplot.png)
