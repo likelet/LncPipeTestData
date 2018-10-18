@@ -39,6 +39,9 @@ The file includes
 
 * __Step 3__. Run the analysis command  (about 10 mins)
 
+        #(run the this `cmd` if your are using a centos 7.0 linux system , this cmd can temperally set the selinux into permissive mode )
+        sudo setenforce 0 
+        
         nextflow -c docker.config run LncPipe/LncRNAanalysisPipe.nf -with-trace -resume -with-timeline timeline.html
 
 
