@@ -102,3 +102,8 @@ The file includes
 ## Run information 
 
 ![timeline](https://github.com/likelet/LncPipeTestData/blob/master/timeplot.png)
+
+
+## another test repo for `lncpipe `
+
+https://github.com/nf-core/test-datasets/blob/lncpipe/README.md 
