@@ -22,7 +22,7 @@ The file includes
 
 * Experimental design file `design.file`
 
-* nextflow running config file `docker.config`
+* nextflow running config file `docker.config` (deprecated, now all config file were moved to the `conf` folder, users could configure the parameter their and run LncPipe with a `-profile` parameter)
 
 
 ## Test command  (Assume that docker and nextflow were properly preinstalled )
@@ -42,7 +42,7 @@ The file includes
         #(run the this `cmd` if your are using a centos 7.0 linux system , this cmd can temperally set the selinux into permissive mode )
         sudo setenforce 0 
         
-        nextflow -c docker.config run LncPipe/LncRNAanalysisPipe.nf -with-trace -resume -with-timeline timeline.html
+        nextflow run LncPipe/LncRNAanalysisPipe.nf -profile docker,test -with-trace -resume -with-timeline timeline.html
 
 
 ## Result content (expected result)
