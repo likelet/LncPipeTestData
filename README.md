@@ -1,7 +1,7 @@
 # LncPipeTestData
 
 This repo contains a test case for running LncPipe.  
-Testdata can be download [here](http://omicsbio.info/pub/testdata.tar.gz)
+Testdata can be download [here](http://download.omicsbio.info/files/DAtools/testdata.tar.gz)
 
 ## Data Information   
 
@@ -29,7 +29,7 @@ The file includes
 
 * __Step 1__. Download the test data 
 
-        wget http://cancerbio.info/pub/LncPipeTestData.tar.gz
+        wget http://download.omicsbio.info/files/DAtools/testdata.tar.gz
         tar -xvzf LncPipeTestData.tar.gz
         cd LncPipeTestData
 
